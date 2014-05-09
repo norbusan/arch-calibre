@@ -6,7 +6,7 @@
 # Contributor: Larry Hajali <larryhaja@gmail.com>
 
 pkgname=calibre
-pkgver=1.35.0
+pkgver=1.36.0
 pkgrel=1
 pkgdesc="Ebook management application"
 arch=('i686' 'x86_64') 
@@ -24,6 +24,9 @@ install=calibre.install
 source=("http://download.calibre-ebook.com/${pkgver}/calibre-${pkgver}.tar.xz"
         'desktop_integration.patch'
         'calibre-mount-helper')
+md5sums=('713a5a3e526201ca779cc72d93d6eaa5'
+         'ece36dfd737fa4a346f0a0e59395e949'
+         '675cd87d41342119827ef706055491e7')
 
 prepare(){
   cd "${srcdir}/${pkgname}"
@@ -83,6 +86,3 @@ package() {
   # Compiling optimized bytecode FS33392
   python2 -O -m compileall "${pkgdir}/usr/lib/calibre/"
 }
-md5sums=('fa98868fc6b446a8c22ef13475e6d224'
-         'ece36dfd737fa4a346f0a0e59395e949'
-         '675cd87d41342119827ef706055491e7')
