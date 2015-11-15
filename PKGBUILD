@@ -6,7 +6,7 @@
 # Contributor: Larry Hajali <larryhaja@gmail.com>
 
 pkgname=calibre
-pkgver=2.43.0
+pkgver=2.44.0
 pkgrel=1
 pkgdesc="Ebook management application"
 arch=('i686' 'x86_64')
@@ -27,7 +27,7 @@ optdepends=('ipython2: to use calibre-debug'
 )
 install=calibre.install
 source=("http://download.calibre-ebook.com/${pkgver}/calibre-${pkgver}.tar.xz")
-md5sums=('e2657fa4036c22bfc49c4bed697d5009')
+md5sums=('89ddafe61418b5b1011e2358e35f3adb')
 
 prepare(){
   cd "${pkgname}-${pkgver}"
