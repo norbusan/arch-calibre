@@ -9,14 +9,14 @@
 
 pkgname=calibre
 pkgver=6.18.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Ebook management application'
 arch=(x86_64)
 url=https://calibre-ebook.com
 license=(GPL3)
 _pydeps=(apsw
          beautifulsoup4
-         cchardet
+         faust-cchardet
          css-parser
          cssselect
          dateutil
