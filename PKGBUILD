@@ -9,7 +9,7 @@
 
 pkgname=calibre
 pkgver=7.0.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Ebook management application'
 arch=(x86_64)
 url=https://calibre-ebook.com
@@ -41,6 +41,7 @@ _pydeps=(apsw
          pyqt6-webengine
          regex
          unrardll
+         xxhash
          zeroconf)
 depends=(hunspell
          hyphen
