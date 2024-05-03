@@ -1,7 +1,7 @@
 pkgbase = calibre
 	pkgdesc = Ebook management application
-	pkgver = 7.9.0
-	pkgrel = 2
+	pkgver = 7.10.0
+	pkgrel = 1
 	url = https://calibre-ebook.com
 	arch = x86_64
 	license = GPL3
@@ -67,10 +67,10 @@ pkgbase = calibre
 	conflicts = calibre-python3
 	replaces = calibre-common
 	replaces = calibre-python3
-	source = https://download.calibre-ebook.com/7.9.0/calibre-7.9.0.tar.xz
-	source = https://calibre-ebook.com/signatures/calibre-7.9.0.tar.xz.sig
+	source = https://download.calibre-ebook.com/7.10.0/calibre-7.10.0.tar.xz
+	source = https://calibre-ebook.com/signatures/calibre-7.10.0.tar.xz.sig
 	validpgpkeys = 3CE1780F78DD88DF45194FD706BC317B515ACE7C
-	sha256sums = 225cefe075d6e9998454d516426d3870767bd451208df5955fd22fadf6021c89
+	sha256sums = 1afbefa2a2c1cdaa6f78a152aa5103e3bd695324632e862a53962337f2ff9c4b
 	sha256sums = SKIP
 
 pkgname = calibre
