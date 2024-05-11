@@ -9,7 +9,7 @@
 
 pkgname=calibre
 pkgver=7.10.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Ebook management application'
 arch=(x86_64)
 url=https://calibre-ebook.com
@@ -93,6 +93,7 @@ prepare(){
 		-i  src/calibre/linux.py
 	# Remove unneeded files
 	rm -f resources/$pkgname-portable.*
+        sed -e 's|"14"|"17"|' -e 's|"11"|"17"|' -i setup/extensions.json # Fix build with ICU 75
 }
 
 build() {
