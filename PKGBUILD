@@ -8,24 +8,25 @@
 # Contributor: Larry Hajali <larryhaja@gmail.com>
 
 pkgname=calibre
-pkgver=7.10.0
-pkgrel=3
+pkgver=7.11.0
+pkgrel=1
 pkgdesc='Ebook management application'
 arch=(x86_64)
 url=https://calibre-ebook.com
-license=(GPL3)
+license=(GPL-3.0-only)
 _pydeps=(apsw
          beautifulsoup4
-         faust-cchardet
          css-parser
          cssselect
          dateutil
          dnspython
+         faust-cchardet
          feedparser
          html2text
          html5-parser
          jeepney
          lxml
+         lxml-html-clean
          markdown
          mechanize
          msgpack
@@ -42,7 +43,8 @@ _pydeps=(apsw
          regex
          unrardll
          xxhash
-         zeroconf)
+         zeroconf
+         zstandard)
 depends=(hunspell
          hyphen
          icu
@@ -61,7 +63,8 @@ depends=(hunspell
          qt6-webengine
          ttf-liberation
          uchardet
-         udisks2)
+         udisks2
+         zstd)
 makedepends=(cmake
              pyqt-builder
              rapydscript-ng
@@ -79,7 +82,7 @@ replaces=("${conflicts[@]}")
 _archive="$pkgname-$pkgver"
 source=("https://download.calibre-ebook.com/$pkgver/$_archive.tar.xz"
         "$url/signatures/$_archive.tar.xz.sig")
-sha256sums=('1afbefa2a2c1cdaa6f78a152aa5103e3bd695324632e862a53962337f2ff9c4b'
+sha256sums=('25243c06965fed9bcb95ddc6339ff27cb4becd18851a2d2bed5ebb5dbebad8eb'
             'SKIP')
 validpgpkeys=('3CE1780F78DD88DF45194FD706BC317B515ACE7C') # Kovid Goyal (New longer key) <kovid@kovidgoyal.net>
 
